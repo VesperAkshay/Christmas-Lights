@@ -4,17 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/styles.css">
-    <title>Futuristic Christmas Lights</title>
+    <title>Christmas Lights</title>
 </head>
 <body>
-    <div class="light-container">
-        <div class="light"></div>
-        <div class="light"></div>
-        <div class="light"></div>
-        <div class="light"></div>
-        <div class="light"></div>
-        <div class="light"></div>
-        <div class="light"></div>
+    <div class="container">
+        <div class="circle-row">
+            <div class="circle red"></div>
+            <div class="circle green"></div>
+            <div class="circle blue"></div>
+            <div class="circle orange"></div>
+            <div class="circle purple"></div>
+            <div class="circle pink"></div>
+            <div class="circle yellow"></div>
+        </div>
+        <!-- Repeat the circle rows as needed -->
+    </div>
+    <div class="controls">
+        <div class="color-menu">
+            <label for="colorSelector">Select Color:</label>
+            <select id="colorSelector">
+                <option value="red">Red</option>
+                <option value="green">Green</option>
+                <option value="blue">Blue</option>
+                <option value="orange">Orange</option>
+                <option value="purple">Purple</option>
+                <option value="pink">Pink</option>
+                <option value="yellow">Yellow</option>
+                <!-- Add more color options as needed -->
+            </select>
+        </div>
+        <button id="applyColor">Apply Color</button>
+        <button id="toggleButton">Start Animation</button>
     </div>
     <script src="js/scripts.js"></script>
 </body>
